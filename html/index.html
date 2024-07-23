@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lí sinh viên</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body onload="renderListStudent()">
+<style>
+    body {
+        background-image: url("https://www.vietnamworks.com/hrinsider/wp-content/uploads/2023/12/be-cun-nay-that-la-dang-iu-qua-phai-dat-anh-nen-thoi-1.jpg")}
+    </style>
+<div class="form-student">
+    <h3>Thông tin sinh viên </h3>
+    <label> Họ và tên </label>
+    <input type="text" id="fullname"/>
+    <span id="fullname-error" class="error"></span></br>
+    <label>Địa chỉ</label>
+    <input type="text" id="address"/>
+    <span id="address-error" class="error"></span> </br>
+    <label>Email </label>
+    <input type="text" id="email"/>
+    <span id="email-error" class="error"></span></br>
+    <label> Số điện thoại</label>
+    <input type="text" id="phonenumber"/>
+    <span id="phonenumber-error" class="error"></span> </br>
+    <label>Mã sinh viên</label>
+    <input type="text" id="studentID">
+    <span id="studentID-error" class="error"></span> </br>
+    <label>Lớp</label>
+    <input type="text" id="classs">
+    <span id="classs-error" class="error"></span></br>
+    <label>Chuyên ngành </label>
+    <input type="text" id="major">
+    <span id="major-error" class="error"></span></br>
+    <label>Trạng thái </label>
+    <input type="text" id="status" >
+    <span id="status-error" class="error"></span></br>
+    <label> Ngày Sinh</label>
+    <input type="date" id ="dateofbirth">
+    </br>
+    <label>Giới tính </label>
+    <input type="radio" id="male" name="gender" value="Male">nam
+    <input type="radio" id="female" name="gender" value="Female">nữ
+    <span id="gender-error" class="error"></span></br>
+    <br>
+    <label>&nbsp;</label>
+    <button onclick="Save()"> Lưu lại </button>
+</div>
+<div class="list-student">
+    <h3> Danh sách sinh viên </h3>
+    <table id="grid-student" ,width="750" border="1" cellpadding="0" cellspacing="0">
+    </table>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+<script src="../js/student.js"></script>
+</body>
+</html>
